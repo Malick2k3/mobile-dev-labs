@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Lab10DeviceFeaturesApp",
+    "slug": "Lab10DeviceFeaturesApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Camera preview for lab demo",
+        "NSLocationWhenInUseUsageDescription": "Show GPS location",
+        "NSContactsUsageDescription": "List contacts",
+        "NSBluetoothAlwaysUsageDescription": "Scan nearby BLE devices",
+        "NSFaceIDUsageDescription": "Biometric authentication"
+      }
+    },
+    "android": {
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "READ_CONTACTS",
+        "BLUETOOTH_SCAN",
+        "BLUETOOTH_CONNECT",
+        "VIBRATE"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "plugins": [],
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
