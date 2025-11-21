@@ -1,50 +1,32 @@
 {
   "expo": {
-    "name": "Lab10DeviceFeaturesApp",
-    "slug": "Lab10DeviceFeaturesApp",
+    "name": "Lab10",
+    "slug": "Lab10",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
     "ios": {
-      "supportsTablet": true,
-      "infoPlist": {
-        "NSCameraUsageDescription": "Camera preview for lab demo",
-        "NSLocationWhenInUseUsageDescription": "Show GPS location",
-        "NSContactsUsageDescription": "List contacts",
-        "NSBluetoothAlwaysUsageDescription": "Scan nearby BLE devices",
-        "NSFaceIDUsageDescription": "Biometric authentication"
-      }
+      "supportsTablet": true
     },
     "android": {
-      "permissions": [
-        "CAMERA",
-        "ACCESS_FINE_LOCATION",
-        "ACCESS_COARSE_LOCATION",
-        "READ_CONTACTS",
-        "BLUETOOTH_SCAN",
-        "BLUETOOTH_CONNECT",
-        "VIBRATE"
-      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "edgeToEdgeEnabled": true
     },
-    "plugins": [],
     "web": {
-      "bundler": "metro",
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
